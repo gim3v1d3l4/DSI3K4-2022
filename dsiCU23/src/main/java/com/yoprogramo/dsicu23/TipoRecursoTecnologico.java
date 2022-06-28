@@ -6,10 +6,12 @@ public class TipoRecursoTecnologico {
     private String nombre;
     private String descripcion;
     
+    
     /*Contructor*/
     public TipoRecursoTecnologico(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
+        
     }   
     
     /*Metodos*/
@@ -28,4 +30,5 @@ public class TipoRecursoTecnologico {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+    
 }

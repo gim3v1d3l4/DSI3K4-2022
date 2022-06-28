@@ -7,10 +7,13 @@ public class Modelo {
     private Marca marca;
     
     /*Constructor*/
+
     public Modelo(String nombre, Marca marca) {
         this.nombre = nombre;
         this.marca = marca;
     }
+
+    
     
     /*Metodos de la clase*/
 
@@ -18,6 +21,7 @@ public class Modelo {
         return nombre;
     }
     
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -33,5 +37,6 @@ public class Modelo {
     /*ACA ESTA LA DEPENDENCIA, CREO Q ES MAS FACIL DAR VUELTA LA RELACION*/
     public String conocerMarca(){
         return this.marca.getNombre();
-    }  
+    }
+    
 }

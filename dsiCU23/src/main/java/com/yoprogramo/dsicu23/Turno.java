@@ -10,9 +10,15 @@ public class Turno {
     private String diaSemana;
     private Date fechaHoraInicio;
     private Date fechaHoraFin;
+    
+    
     private ArrayList <CambioEstadoTurno> cambioEstadoTurno;  /* Relacion a cambio de estados*/
     
+    
+    
+    
     /*Contructor*/
+
     public Turno(Date fechaGeneracion, String diaSemana, Date fechaHoraInicio, Date fechaHoraFin, ArrayList<CambioEstadoTurno> cambioEstadoTurno) {
         this.fechaGeneracion = fechaGeneracion;
         this.diaSemana = diaSemana;
@@ -61,17 +67,25 @@ public class Turno {
     public void setCambioEstadoTurno(ArrayList<CambioEstadoTurno> cambioEstadoTurno) {
         this.cambioEstadoTurno = cambioEstadoTurno;
     }
-    
     /*PREGUNTA SI LA HORA QUE SE LE PASA POR PARAMETRO ES MENOR A LA HORA DE INICIO DEL TURNO*/
     public boolean esDesdeHoraFechaYHoraActual(Date fechaActual) {
         return this.fechaHoraInicio.after(fechaActual);
     }
 
     public Turno mostrarTurno(Turno t) {
-        
         for (int i = 0; i< this.cambioEstadoTurno.size();i++){
             this.cambioEstadoTurno.get(i).esUltimoCambioEstadoTurno();
+            
+            
+        
         }
         return this;
-    } 
+    }
+    
+
+    
+
+    
+    
+    
 }

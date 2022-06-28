@@ -11,8 +11,13 @@ public class PersonalCientifico {
     private String correoElectronicoInstitucional;
     private String correoElectronicoPersonal;
     private Integer telefonoCelular;
-   
+    
+    
+    
+    
+    
     /*Constructor de la clase*/
+
     public PersonalCientifico(Integer legajo, String nombre, String apellido, Integer numeroDocumento, String correoElectronicoInstitucional, String correoElectronicoPersonal, Integer telefonoCelular) {
         this.legajo = legajo;
         this.nombre = nombre;
@@ -20,8 +25,11 @@ public class PersonalCientifico {
         this.numeroDocumento = numeroDocumento;
         this.correoElectronicoInstitucional = correoElectronicoInstitucional;
         this.correoElectronicoPersonal = correoElectronicoPersonal;
-        this.telefonoCelular = telefonoCelular;  
+        this.telefonoCelular = telefonoCelular;
+        
+        
     }
+    
     
     /*Metodos de la clase*/
 
@@ -83,4 +91,5 @@ public class PersonalCientifico {
     
     public void esUsuarioLegueado(){
     }
+    
 }

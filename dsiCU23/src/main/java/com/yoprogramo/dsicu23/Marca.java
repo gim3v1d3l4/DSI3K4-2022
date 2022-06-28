@@ -6,9 +6,13 @@ public class Marca {
     /*Definicion atributos de la clase*/
     private String nombre;
     
+    
+    
     /*Contructor de la clase*/
+
     public Marca(String nombre) {
         this.nombre = nombre;
+        
     }
 
     /*Metodos*/
@@ -19,4 +23,7 @@ public class Marca {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    
+    
 }
